@@ -37,9 +37,9 @@ namespace resourceCollecter
             Button resource1Tool2, Button resource2Tool2, Button resource3Tool2, Button resource4Tool2,
             Button resource1Tool3, Button resource2Tool3, Button resource3Tool3, Button resource4Tool3,
             Button resource1ToRocket, Button resource2ToRocket, Button resource3ToRocket, Button resource4ToRocket,
-            Button resource1Tool1Upgrade, Button resource2Tool1Upgrade, Button resource3Tool1Upgrade, Button resource4Tool1Upgrade,
-            Button resource1Tool2Upgrade, Button resource2Tool2Upgrade, Button resource3Tool2Upgrade, Button resource4Tool2Upgrade,
-            Button resource1Tool3Upgrade, Button resource2Tool3Upgrade, Button resource3Tool3Upgrade, Button resource4Tool3Upgrade)
+            Button resource1Tool1Upgrades, Button resource2Tool1Upgrades, Button resource3Tool1Upgrades, Button resource4Tool1Upgrades,
+            Button resource1Tool2Upgrades, Button resource2Tool2Upgrades, Button resource3Tool2Upgrades, Button resource4Tool2Upgrades,
+            Button resource1Tool3Upgrades, Button resource2Tool3Upgrades, Button resource3Tool3Upgrades, Button resource4Tool3Upgrades)
         {
             string[] currentWorldResourceNames = worldResourceNames[currentWorld];
             string[] currentWorldResourceImages = worldResourceImages[currentWorld];
@@ -104,32 +104,32 @@ namespace resourceCollecter
             resource4ToRocket.Text = "send " + currentWorldResourceNames[3] + " to rocket\n" + resource4.resource4ToRocket.ToString("F0") + " total sent\n" + (resource4.resource4Needed - resource4.resource4ToRocket).ToString("F0") + " needed!";
             resource4ToRocket.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[3]));
 
-            resource1Tool1Upgrade.Text = currentWorldResourceNames[0] + " miner + " + resource1.increasePerSecond1UpgradeCount.ToString() + "\nCosts: " + resource1.increasePerSecond1UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[0];
-            resource1Tool1Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[0]));
-            resource2Tool1Upgrade.Text = currentWorldResourceNames[1] + " miner + " + resource2.increasePerSecond1UpgradeCount.ToString() + "\nCosts: " + resource2.increasePerSecond1UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[1];
-            resource2Tool1Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[1]));
-            resource3Tool1Upgrade.Text = currentWorldResourceNames[2] + " miner + " + resource3.increasePerSecond1UpgradeCount.ToString() + "\nCosts: " + resource3.increasePerSecond1UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[2];
-            resource3Tool1Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[2]));
-            resource4Tool1Upgrade.Text = currentWorldResourceNames[3] + " miner + " + resource4.increasePerSecond1UpgradeCount.ToString() + "\nCosts: " + resource4.increasePerSecond1UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[3];
-            resource4Tool1Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[3]));
+            resource1Tool1Upgrades.Text = currentWorldResourceNames[0] + " miner + " + resource1.increasePerSecond1UpgradeCount.ToString() + "\nCosts: " + resource1.increasePerSecond1UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[0];
+            resource1Tool1Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[0]));
+            resource2Tool1Upgrades.Text = currentWorldResourceNames[1] + " miner + " + resource2.increasePerSecond1UpgradeCount.ToString() + "\nCosts: " + resource2.increasePerSecond1UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[1];
+            resource2Tool1Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[1]));
+            resource3Tool1Upgrades.Text = currentWorldResourceNames[2] + " miner + " + resource3.increasePerSecond1UpgradeCount.ToString() + "\nCosts: " + resource3.increasePerSecond1UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[2];
+            resource3Tool1Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[2]));
+            resource4Tool1Upgrades.Text = currentWorldResourceNames[3] + " miner + " + resource4.increasePerSecond1UpgradeCount.ToString() + "\nCosts: " + resource4.increasePerSecond1UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[3];
+            resource4Tool1Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[3]));
 
-            resource1Tool2Upgrade.Text = currentWorldResourceNames[0] + " drill + " + resource1.increasePerSecond2UpgradeCount.ToString() + "\nCosts: " + resource1.increasePerSecond2UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[0];
-            resource1Tool2Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[0]));
-            resource2Tool2Upgrade.Text = currentWorldResourceNames[1] + " drill + " + resource2.increasePerSecond2UpgradeCount.ToString() + "\nCosts: " + resource2.increasePerSecond2UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[1];
-            resource2Tool2Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[1]));
-            resource3Tool2Upgrade.Text = currentWorldResourceNames[2] + " drill + " + resource3.increasePerSecond2UpgradeCount.ToString() + "\nCosts: " + resource3.increasePerSecond2UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[2];
-            resource3Tool2Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[2]));
-            resource4Tool2Upgrade.Text = currentWorldResourceNames[3] + " drill + " + resource4.increasePerSecond2UpgradeCount.ToString() + "\nCosts: " + resource4.increasePerSecond2UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[3];
-            resource4Tool2Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[3]));
+            resource1Tool2Upgrades.Text = currentWorldResourceNames[0] + " drill + " + resource1.increasePerSecond2UpgradeCount.ToString() + "\nCosts: " + resource1.increasePerSecond2UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[0];
+            resource1Tool2Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[0]));
+            resource2Tool2Upgrades.Text = currentWorldResourceNames[1] + " drill + " + resource2.increasePerSecond2UpgradeCount.ToString() + "\nCosts: " + resource2.increasePerSecond2UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[1];
+            resource2Tool2Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[1]));
+            resource3Tool2Upgrades.Text = currentWorldResourceNames[2] + " drill + " + resource3.increasePerSecond2UpgradeCount.ToString() + "\nCosts: " + resource3.increasePerSecond2UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[2];
+            resource3Tool2Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[2]));
+            resource4Tool2Upgrades.Text = currentWorldResourceNames[3] + " drill + " + resource4.increasePerSecond2UpgradeCount.ToString() + "\nCosts: " + resource4.increasePerSecond2UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[3];
+            resource4Tool2Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[3]));
 
-            resource1Tool3Upgrade.Text = currentWorldResourceNames[0] + " excavator + " + resource1.increasePerSecond3UpgradeCount.ToString() + "\nCosts: " + resource1.increasePerSecond3UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[0];
-            resource1Tool3Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[0]));
-            resource2Tool3Upgrade.Text = currentWorldResourceNames[1] + " excavator + " + resource2.increasePerSecond3UpgradeCount.ToString() + "\nCosts: " + resource2.increasePerSecond3UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[1];
-            resource2Tool3Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[1]));
-            resource3Tool3Upgrade.Text = currentWorldResourceNames[2] + " excavator + " + resource3.increasePerSecond3UpgradeCount.ToString() + "\nCosts: " + resource3.increasePerSecond3UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[2];
-            resource3Tool3Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[2]));
-            resource4Tool3Upgrade.Text = currentWorldResourceNames[3] + " excavator + " + resource4.increasePerSecond3UpgradeCount.ToString() + "\nCosts: " + resource4.increasePerSecond3UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[3];
-            resource4Tool3Upgrade.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[3]));
+            resource1Tool3Upgrades.Text = currentWorldResourceNames[0] + " excavator + " + resource1.increasePerSecond3UpgradeCount.ToString() + "\nCosts: " + resource1.increasePerSecond3UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[0];
+            resource1Tool3Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[0]));
+            resource2Tool3Upgrades.Text = currentWorldResourceNames[1] + " excavator + " + resource2.increasePerSecond3UpgradeCount.ToString() + "\nCosts: " + resource2.increasePerSecond3UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[1];
+            resource2Tool3Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[1]));
+            resource3Tool3Upgrades.Text = currentWorldResourceNames[2] + " excavator + " + resource3.increasePerSecond3UpgradeCount.ToString() + "\nCosts: " + resource3.increasePerSecond3UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[2];
+            resource3Tool3Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[2]));
+            resource4Tool3Upgrades.Text = currentWorldResourceNames[3] + " excavator + " + resource4.increasePerSecond3UpgradeCount.ToString() + "\nCosts: " + resource4.increasePerSecond3UpgradeCost.ToString("F0") + " " + currentWorldResourceNames[3];
+            resource4Tool3Upgrades.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(Path.GetFileNameWithoutExtension(currentWorldResourceImages[3]));
 
             //tokenUpgrades.Text = "Upgrades\nTokens aquired: " + upgradeTree.UpgradeTokens;
         }

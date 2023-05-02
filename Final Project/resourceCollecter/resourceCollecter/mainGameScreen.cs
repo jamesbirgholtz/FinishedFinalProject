@@ -20,9 +20,10 @@ namespace resourceCollecter
         private bool saveFilePathCreated = false;
         private string saveFilePath;
         private static readonly Image backgroundImage;
-        public Panel _tool1Upgrades { get; private set; }
-        public Panel _tool2Upgrades { get; private set; }
-        public Panel _tool3Upgrades { get; private set; }
+
+        public Panel _tool1Upgrades => tool1Upgrades;
+        public Panel _tool2Upgrades => tool2Upgrades;
+        public Panel _tool3Upgrades => tool3Upgrades;
 
 
 
@@ -174,9 +175,9 @@ namespace resourceCollecter
              resource1Tool2, resource2Tool2, resource3Tool2, resource4Tool2,
              resource1Tool3, resource2Tool3, resource3Tool3, resource4Tool3,
              resource1ToRocket, resource2ToRocket, resource3ToRocket, resource4ToRocket,
-             resource1Tool1Upgrade, resource2Tool1Upgrade, resource3Tool1Upgrade, resource4Tool1Upgrade,
-             resource1Tool2Upgrade, resource2Tool2Upgrade, resource3Tool2Upgrade, resource4Tool2Upgrade,
-             resource1Tool3Upgrade, resource2Tool3Upgrade, resource3Tool3Upgrade, resource4Tool3Upgrade);
+             resource1Tool1Upgrades, resource2Tool1Upgrades, resource3Tool1Upgrades, resource4Tool1Upgrades,
+             resource1Tool2Upgrades, resource2Tool2Upgrades, resource3Tool2Upgrades, resource4Tool2Upgrades,
+             resource1Tool3Upgrades, resource2Tool3Upgrades, resource3Tool3Upgrades, resource4Tool3Upgrades);
         }
         // r1 buttons
         private void resource1PerClickUpgrade_Click(object sender, EventArgs e)
@@ -318,92 +319,92 @@ namespace resourceCollecter
             UpdateTextOnForm();
             SaveGame();
         }
-
+        
         // tool1 upgrades
-        private void resource1Tool1Upgrade_Click(object sender, EventArgs e)
+        private void resource1Tool1Upgrades_Click(object sender, EventArgs e)
         {
             resource1.IncreasePerSecond1Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
 
-        private void resource2Tool1Upgrade_Click(object sender, EventArgs e)
+        private void resource2Tool1Upgrades_Click(object sender, EventArgs e)
         {
             resource2.IncreasePerSecond1Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
 
-        private void resource3Tool1Upgrade_Click(object sender, EventArgs e)
+        private void resource3Tool1Upgrades_Click(object sender, EventArgs e)
         {
             resource3.IncreasePerSecond1Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
 
-        private void resource4Tool1Upgrade_Click(object sender, EventArgs e)
+        private void resource4Tool1Upgrades_Click(object sender, EventArgs e)
         {
             resource4.IncreasePerSecond1Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
         // tool2 updgrades
-        private void resource1Tool2Upgrade_Click(object sender, EventArgs e)
+        private void resource1Tool2Upgrades_Click(object sender, EventArgs e)
         {
             resource1.IncreasePerSecond2Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
 
-        private void resource2Tool2Upgrade_Click(object sender, EventArgs e)
+        private void resource2Tool2Upgrades_Click(object sender, EventArgs e)
         {
             resource2.IncreasePerSecond2Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
 
-        private void resource3Tool2Upgrade_Click(object sender, EventArgs e)
+        private void resource3Tool2Upgrades_Click(object sender, EventArgs e)
         {
             resource3.IncreasePerSecond2Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
 
-        private void resource4Tool2Upgrade_Click(object sender, EventArgs e)
+        private void resource4Tool2Upgrades_Click(object sender, EventArgs e)
         {
             resource4.IncreasePerSecond2Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
         // tool3 upgrades
-        private void resource1Tool3Upgrade_Click(object sender, EventArgs e)
+        private void resource1Tool3Upgrades_Click(object sender, EventArgs e)
         {
             resource1.IncreasePerSecond3Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
 
-        private void resource2Tool3Upgrade_Click(object sender, EventArgs e)
+        private void resource2Tool3Upgrades_Click(object sender, EventArgs e)
         {
             resource2.IncreasePerSecond3Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
 
-        private void resource3Tool3Upgrade_Click(object sender, EventArgs e)
+        private void resource3Tool3Upgrades_Click(object sender, EventArgs e)
         {
             resource3.IncreasePerSecond3Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
 
-        private void resource4Tool3Upgrade_Click(object sender, EventArgs e)
+        private void resource4Tool3Upgrades_Click(object sender, EventArgs e)
         {
             resource4.IncreasePerSecond3Upgrade();
             UpdateTextOnForm();
             SaveGame();
         }
-
+        
         private void launchButton_Click(object sender, EventArgs e)
         {
             // once the launch button in pressed call to the newworld class to use the reset values method 
@@ -514,9 +515,9 @@ namespace resourceCollecter
                         resource1Tool2, resource2Tool2, resource3Tool2, resource4Tool2,
                         resource1Tool3, resource2Tool3, resource3Tool3, resource4Tool3,
                         resource1ToRocket, resource2ToRocket, resource3ToRocket, resource4ToRocket,
-                        resource1Tool1Upgrade, resource2Tool1Upgrade, resource3Tool1Upgrade, resource4Tool1Upgrade,
-                        resource1Tool2Upgrade, resource2Tool2Upgrade, resource3Tool2Upgrade, resource4Tool2Upgrade,
-                        resource1Tool3Upgrade, resource2Tool3Upgrade, resource3Tool3Upgrade, resource4Tool3Upgrade);
+                        resource1Tool1Upgrades, resource2Tool1Upgrades, resource3Tool1Upgrades, resource4Tool1Upgrades,
+                        resource1Tool2Upgrades, resource2Tool2Upgrades, resource3Tool2Upgrades, resource4Tool2Upgrades,
+                        resource1Tool3Upgrades, resource2Tool3Upgrades, resource3Tool3Upgrades, resource4Tool3Upgrades);
 
                         // set the save file path as the file name of the opened file ; start the save game timer
                         saveFilePath = openFileDialog.FileName;
@@ -568,5 +569,6 @@ namespace resourceCollecter
         {
             loadGameToolTip.SetToolTip(loadGameButton, "Load Game");
         }
+
     }
 }

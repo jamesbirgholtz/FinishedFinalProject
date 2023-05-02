@@ -33,17 +33,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.rocketProgressBar = new System.Windows.Forms.ProgressBar();
             this.resourceButton = new System.Windows.Forms.Button();
-            this._tool3Upgrades = new System.Windows.Forms.Panel();
             this.resource4Tool3Upgrade = new System.Windows.Forms.Button();
             this.resource3Tool3Upgrade = new System.Windows.Forms.Button();
             this.resource2Tool3Upgrade = new System.Windows.Forms.Button();
             this.resource1Tool3Upgrade = new System.Windows.Forms.Button();
-            this._tool2Upgrades = new System.Windows.Forms.Panel();
             this.resource4Tool2Upgrade = new System.Windows.Forms.Button();
             this.resource3Tool2Upgrade = new System.Windows.Forms.Button();
             this.resource2Tool2Upgrade = new System.Windows.Forms.Button();
             this.resource1Tool2Upgrade = new System.Windows.Forms.Button();
-            this._tool1Upgrades = new System.Windows.Forms.Panel();
             this.resource4Tool1Upgrade = new System.Windows.Forms.Button();
             this.resource3Tool1Upgrade = new System.Windows.Forms.Button();
             this.resource2Tool1Upgrade = new System.Windows.Forms.Button();
@@ -86,9 +83,24 @@
             this.resource1ToRocket = new System.Windows.Forms.Button();
             this.resource4ToRocket = new System.Windows.Forms.Button();
             this.resource3ToRocket = new System.Windows.Forms.Button();
-            this._tool3Upgrades.SuspendLayout();
-            this._tool2Upgrades.SuspendLayout();
-            this._tool1Upgrades.SuspendLayout();
+            this.tool1Upgrades = new System.Windows.Forms.Panel();
+            this.resource4Tool1Upgrades = new System.Windows.Forms.Button();
+            this.resource3Tool1Upgrades = new System.Windows.Forms.Button();
+            this.resource2Tool1Upgrades = new System.Windows.Forms.Button();
+            this.resource1Tool1Upgrades = new System.Windows.Forms.Button();
+            this.tool2Upgrades = new System.Windows.Forms.Panel();
+            this.resource4Tool2Upgrades = new System.Windows.Forms.Button();
+            this.resource3Tool2Upgrades = new System.Windows.Forms.Button();
+            this.resource2Tool2Upgrades = new System.Windows.Forms.Button();
+            this.resource1Tool2Upgrades = new System.Windows.Forms.Button();
+            this.tool3Upgrades = new System.Windows.Forms.Panel();
+            this.resource4Tool3Upgrades = new System.Windows.Forms.Button();
+            this.resource3Tool3Upgrades = new System.Windows.Forms.Button();
+            this.resource2Tool3Upgrades = new System.Windows.Forms.Button();
+            this.resource1Tool3Upgrades = new System.Windows.Forms.Button();
+            this.tool1Upgrades.SuspendLayout();
+            this.tool2Upgrades.SuspendLayout();
+            this.tool3Upgrades.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -96,7 +108,7 @@
             this.panel1.AutoSize = true;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(0, 996);
             this.panel1.TabIndex = 0;
@@ -106,7 +118,7 @@
             this.rocketProgressBar.BackColor = System.Drawing.Color.Black;
             this.rocketProgressBar.ForeColor = System.Drawing.Color.Black;
             this.rocketProgressBar.Location = new System.Drawing.Point(14, 956);
-            this.rocketProgressBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rocketProgressBar.Margin = new System.Windows.Forms.Padding(4);
             this.rocketProgressBar.Name = "rocketProgressBar";
             this.rocketProgressBar.Size = new System.Drawing.Size(1205, 30);
             this.rocketProgressBar.Step = 1;
@@ -123,7 +135,7 @@
             this.resourceButton.Font = new System.Drawing.Font("Pixel Maz", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resourceButton.ForeColor = System.Drawing.Color.White;
             this.resourceButton.Location = new System.Drawing.Point(18, 201);
-            this.resourceButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resourceButton.Margin = new System.Windows.Forms.Padding(4);
             this.resourceButton.Name = "resourceButton";
             this.resourceButton.Size = new System.Drawing.Size(415, 388);
             this.resourceButton.TabIndex = 44;
@@ -131,22 +143,6 @@
             this.resourceButton.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.resourceButton.UseVisualStyleBackColor = true;
             this.resourceButton.Click += new System.EventHandler(this.resourceButton_Click);
-            // 
-            // tool3Upgrades
-            // 
-            this._tool3Upgrades.AutoScroll = true;
-            this._tool3Upgrades.AutoSize = true;
-            this._tool3Upgrades.BackColor = System.Drawing.Color.Transparent;
-            this._tool3Upgrades.Controls.Add(this.resource4Tool3Upgrade);
-            this._tool3Upgrades.Controls.Add(this.resource3Tool3Upgrade);
-            this._tool3Upgrades.Controls.Add(this.resource2Tool3Upgrade);
-            this._tool3Upgrades.Controls.Add(this.resource1Tool3Upgrade);
-            this._tool3Upgrades.Location = new System.Drawing.Point(1032, 631);
-            this._tool3Upgrades.Margin = new System.Windows.Forms.Padding(0);
-            this._tool3Upgrades.Name = "tool3Upgrades";
-            this._tool3Upgrades.Size = new System.Drawing.Size(187, 248);
-            this._tool3Upgrades.TabIndex = 80;
-            this._tool3Upgrades.Visible = false;
             // 
             // resource4Tool3Upgrade
             // 
@@ -166,7 +162,6 @@
             this.resource4Tool3Upgrade.Text = "resource4 esc upgrade";
             this.resource4Tool3Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource4Tool3Upgrade.UseVisualStyleBackColor = true;
-            this.resource4Tool3Upgrade.Click += new System.EventHandler(this.resource4Tool3Upgrade_Click);
             // 
             // resource3Tool3Upgrade
             // 
@@ -186,7 +181,6 @@
             this.resource3Tool3Upgrade.Text = "resource3 esc upgrade";
             this.resource3Tool3Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource3Tool3Upgrade.UseVisualStyleBackColor = true;
-            this.resource3Tool3Upgrade.Click += new System.EventHandler(this.resource3Tool3Upgrade_Click);
             // 
             // resource2Tool3Upgrade
             // 
@@ -206,7 +200,6 @@
             this.resource2Tool3Upgrade.Text = "resource2 esc upgrade";
             this.resource2Tool3Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource2Tool3Upgrade.UseVisualStyleBackColor = true;
-            this.resource2Tool3Upgrade.Click += new System.EventHandler(this.resource2Tool3Upgrade_Click);
             // 
             // resource1Tool3Upgrade
             // 
@@ -226,22 +219,6 @@
             this.resource1Tool3Upgrade.Text = "Iron esc upgrade";
             this.resource1Tool3Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource1Tool3Upgrade.UseVisualStyleBackColor = true;
-            this.resource1Tool3Upgrade.Click += new System.EventHandler(this.resource1Tool3Upgrade_Click);
-            // 
-            // tool2Upgrades
-            // 
-            this._tool2Upgrades.AutoSize = true;
-            this._tool2Upgrades.BackColor = System.Drawing.Color.Transparent;
-            this._tool2Upgrades.Controls.Add(this.resource4Tool2Upgrade);
-            this._tool2Upgrades.Controls.Add(this.resource3Tool2Upgrade);
-            this._tool2Upgrades.Controls.Add(this.resource2Tool2Upgrade);
-            this._tool2Upgrades.Controls.Add(this.resource1Tool2Upgrade);
-            this._tool2Upgrades.Location = new System.Drawing.Point(839, 631);
-            this._tool2Upgrades.Margin = new System.Windows.Forms.Padding(0);
-            this._tool2Upgrades.Name = "tool2Upgrades";
-            this._tool2Upgrades.Size = new System.Drawing.Size(187, 248);
-            this._tool2Upgrades.TabIndex = 78;
-            this._tool2Upgrades.Visible = false;
             // 
             // resource4Tool2Upgrade
             // 
@@ -261,7 +238,6 @@
             this.resource4Tool2Upgrade.Text = "resource4 drill upgrade";
             this.resource4Tool2Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource4Tool2Upgrade.UseVisualStyleBackColor = true;
-            this.resource4Tool2Upgrade.Click += new System.EventHandler(this.resource4Tool2Upgrade_Click);
             // 
             // resource3Tool2Upgrade
             // 
@@ -281,7 +257,6 @@
             this.resource3Tool2Upgrade.Text = "Titanium Drill upgrade";
             this.resource3Tool2Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource3Tool2Upgrade.UseVisualStyleBackColor = true;
-            this.resource3Tool2Upgrade.Click += new System.EventHandler(this.resource3Tool2Upgrade_Click);
             // 
             // resource2Tool2Upgrade
             // 
@@ -301,7 +276,6 @@
             this.resource2Tool2Upgrade.Text = "Gold drill upgrade";
             this.resource2Tool2Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource2Tool2Upgrade.UseVisualStyleBackColor = true;
-            this.resource2Tool2Upgrade.Click += new System.EventHandler(this.resource2Tool2Upgrade_Click);
             // 
             // resource1Tool2Upgrade
             // 
@@ -321,22 +295,6 @@
             this.resource1Tool2Upgrade.Text = "Iron drill upgrade";
             this.resource1Tool2Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource1Tool2Upgrade.UseVisualStyleBackColor = true;
-            this.resource1Tool2Upgrade.Click += new System.EventHandler(this.resource1Tool2Upgrade_Click);
-            // 
-            // tool1Upgrades
-            // 
-            this._tool1Upgrades.AutoSize = true;
-            this._tool1Upgrades.BackColor = System.Drawing.Color.Transparent;
-            this._tool1Upgrades.Controls.Add(this.resource4Tool1Upgrade);
-            this._tool1Upgrades.Controls.Add(this.resource3Tool1Upgrade);
-            this._tool1Upgrades.Controls.Add(this.resource2Tool1Upgrade);
-            this._tool1Upgrades.Controls.Add(this.resource1Tool1Upgrade);
-            this._tool1Upgrades.Location = new System.Drawing.Point(645, 631);
-            this._tool1Upgrades.Margin = new System.Windows.Forms.Padding(0);
-            this._tool1Upgrades.Name = "tool1Upgrades";
-            this._tool1Upgrades.Size = new System.Drawing.Size(187, 248);
-            this._tool1Upgrades.TabIndex = 81;
-            this._tool1Upgrades.Visible = false;
             // 
             // resource4Tool1Upgrade
             // 
@@ -356,7 +314,6 @@
             this.resource4Tool1Upgrade.Text = "Diamond Miner Upgrade";
             this.resource4Tool1Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource4Tool1Upgrade.UseVisualStyleBackColor = true;
-            this.resource4Tool1Upgrade.Click += new System.EventHandler(this.resource4Tool1Upgrade_Click);
             // 
             // resource3Tool1Upgrade
             // 
@@ -376,7 +333,6 @@
             this.resource3Tool1Upgrade.Text = "Titanium miner upgrade";
             this.resource3Tool1Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource3Tool1Upgrade.UseVisualStyleBackColor = true;
-            this.resource3Tool1Upgrade.Click += new System.EventHandler(this.resource3Tool1Upgrade_Click);
             // 
             // resource2Tool1Upgrade
             // 
@@ -396,7 +352,6 @@
             this.resource2Tool1Upgrade.Text = "Gold miner upgrade";
             this.resource2Tool1Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource2Tool1Upgrade.UseVisualStyleBackColor = true;
-            this.resource2Tool1Upgrade.Click += new System.EventHandler(this.resource2Tool1Upgrade_Click);
             // 
             // resource1Tool1Upgrade
             // 
@@ -416,7 +371,6 @@
             this.resource1Tool1Upgrade.Text = "Iron miner upgrade";
             this.resource1Tool1Upgrade.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.resource1Tool1Upgrade.UseVisualStyleBackColor = true;
-            this.resource1Tool1Upgrade.Click += new System.EventHandler(this.resource1Tool1Upgrade_Click);
             // 
             // textUpdater
             // 
@@ -445,7 +399,7 @@
             this.resource1TextBox.BackColor = System.Drawing.Color.Transparent;
             this.resource1TextBox.Font = new System.Drawing.Font("Pixel Maz", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resource1TextBox.ForeColor = System.Drawing.Color.White;
-            this.resource1TextBox.Location = new System.Drawing.Point(9, 48);
+            this.resource1TextBox.Location = new System.Drawing.Point(39, 45);
             this.resource1TextBox.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.resource1TextBox.Name = "resource1TextBox";
             this.resource1TextBox.Size = new System.Drawing.Size(207, 26);
@@ -459,7 +413,7 @@
             this.resource2TextBox.BackColor = System.Drawing.Color.Transparent;
             this.resource2TextBox.Font = new System.Drawing.Font("Pixel Maz", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resource2TextBox.ForeColor = System.Drawing.Color.White;
-            this.resource2TextBox.Location = new System.Drawing.Point(230, 48);
+            this.resource2TextBox.Location = new System.Drawing.Point(247, 45);
             this.resource2TextBox.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.resource2TextBox.Name = "resource2TextBox";
             this.resource2TextBox.Size = new System.Drawing.Size(212, 26);
@@ -473,7 +427,7 @@
             this.resource3TextBox.BackColor = System.Drawing.Color.Transparent;
             this.resource3TextBox.Font = new System.Drawing.Font("Pixel Maz", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resource3TextBox.ForeColor = System.Drawing.Color.White;
-            this.resource3TextBox.Location = new System.Drawing.Point(13, 124);
+            this.resource3TextBox.Location = new System.Drawing.Point(39, 121);
             this.resource3TextBox.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.resource3TextBox.Name = "resource3TextBox";
             this.resource3TextBox.Size = new System.Drawing.Size(195, 26);
@@ -487,7 +441,7 @@
             this.resource4TextBox.BackColor = System.Drawing.Color.Transparent;
             this.resource4TextBox.Font = new System.Drawing.Font("Pixel Maz", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resource4TextBox.ForeColor = System.Drawing.Color.White;
-            this.resource4TextBox.Location = new System.Drawing.Point(230, 124);
+            this.resource4TextBox.Location = new System.Drawing.Point(247, 121);
             this.resource4TextBox.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.resource4TextBox.Name = "resource4TextBox";
             this.resource4TextBox.Size = new System.Drawing.Size(212, 26);
@@ -528,7 +482,7 @@
             this.launchButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.launchButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.launchButton.Location = new System.Drawing.Point(38, 222);
-            this.launchButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.launchButton.Margin = new System.Windows.Forms.Padding(4);
             this.launchButton.Name = "launchButton";
             this.launchButton.Size = new System.Drawing.Size(367, 340);
             this.launchButton.TabIndex = 72;
@@ -629,7 +583,7 @@
             this.resource4Tool3.ForeColor = System.Drawing.Color.White;
             this.resource4Tool3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource4Tool3.Location = new System.Drawing.Point(1032, 429);
-            this.resource4Tool3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource4Tool3.Margin = new System.Windows.Forms.Padding(4);
             this.resource4Tool3.Name = "resource4Tool3";
             this.resource4Tool3.Size = new System.Drawing.Size(187, 131);
             this.resource4Tool3.TabIndex = 66;
@@ -647,7 +601,7 @@
             this.resource4Tool2.ForeColor = System.Drawing.Color.White;
             this.resource4Tool2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource4Tool2.Location = new System.Drawing.Point(839, 429);
-            this.resource4Tool2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource4Tool2.Margin = new System.Windows.Forms.Padding(4);
             this.resource4Tool2.Name = "resource4Tool2";
             this.resource4Tool2.Size = new System.Drawing.Size(187, 131);
             this.resource4Tool2.TabIndex = 65;
@@ -665,7 +619,7 @@
             this.resource4Tool1.ForeColor = System.Drawing.Color.White;
             this.resource4Tool1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource4Tool1.Location = new System.Drawing.Point(645, 429);
-            this.resource4Tool1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource4Tool1.Margin = new System.Windows.Forms.Padding(4);
             this.resource4Tool1.Name = "resource4Tool1";
             this.resource4Tool1.Size = new System.Drawing.Size(187, 131);
             this.resource4Tool1.TabIndex = 64;
@@ -683,7 +637,7 @@
             this.resource4PerClickUpgrade.ForeColor = System.Drawing.Color.White;
             this.resource4PerClickUpgrade.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource4PerClickUpgrade.Location = new System.Drawing.Point(451, 429);
-            this.resource4PerClickUpgrade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource4PerClickUpgrade.Margin = new System.Windows.Forms.Padding(4);
             this.resource4PerClickUpgrade.Name = "resource4PerClickUpgrade";
             this.resource4PerClickUpgrade.Size = new System.Drawing.Size(187, 131);
             this.resource4PerClickUpgrade.TabIndex = 63;
@@ -701,7 +655,7 @@
             this.resource3Tool3.ForeColor = System.Drawing.Color.White;
             this.resource3Tool3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource3Tool3.Location = new System.Drawing.Point(1032, 290);
-            this.resource3Tool3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource3Tool3.Margin = new System.Windows.Forms.Padding(4);
             this.resource3Tool3.Name = "resource3Tool3";
             this.resource3Tool3.Size = new System.Drawing.Size(187, 131);
             this.resource3Tool3.TabIndex = 62;
@@ -719,7 +673,7 @@
             this.resource3Tool2.ForeColor = System.Drawing.Color.White;
             this.resource3Tool2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource3Tool2.Location = new System.Drawing.Point(839, 290);
-            this.resource3Tool2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource3Tool2.Margin = new System.Windows.Forms.Padding(4);
             this.resource3Tool2.Name = "resource3Tool2";
             this.resource3Tool2.Size = new System.Drawing.Size(187, 131);
             this.resource3Tool2.TabIndex = 61;
@@ -737,7 +691,7 @@
             this.resource3Tool1.ForeColor = System.Drawing.Color.White;
             this.resource3Tool1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource3Tool1.Location = new System.Drawing.Point(645, 290);
-            this.resource3Tool1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource3Tool1.Margin = new System.Windows.Forms.Padding(4);
             this.resource3Tool1.Name = "resource3Tool1";
             this.resource3Tool1.Size = new System.Drawing.Size(187, 131);
             this.resource3Tool1.TabIndex = 60;
@@ -755,7 +709,7 @@
             this.resource3PerClickUpgrade.ForeColor = System.Drawing.Color.White;
             this.resource3PerClickUpgrade.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource3PerClickUpgrade.Location = new System.Drawing.Point(451, 290);
-            this.resource3PerClickUpgrade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource3PerClickUpgrade.Margin = new System.Windows.Forms.Padding(4);
             this.resource3PerClickUpgrade.Name = "resource3PerClickUpgrade";
             this.resource3PerClickUpgrade.Size = new System.Drawing.Size(187, 131);
             this.resource3PerClickUpgrade.TabIndex = 59;
@@ -773,7 +727,7 @@
             this.resource2Tool3.ForeColor = System.Drawing.Color.White;
             this.resource2Tool3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource2Tool3.Location = new System.Drawing.Point(1032, 151);
-            this.resource2Tool3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource2Tool3.Margin = new System.Windows.Forms.Padding(4);
             this.resource2Tool3.Name = "resource2Tool3";
             this.resource2Tool3.Size = new System.Drawing.Size(190, 131);
             this.resource2Tool3.TabIndex = 58;
@@ -791,7 +745,7 @@
             this.resource2Tool2.ForeColor = System.Drawing.Color.White;
             this.resource2Tool2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource2Tool2.Location = new System.Drawing.Point(839, 151);
-            this.resource2Tool2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource2Tool2.Margin = new System.Windows.Forms.Padding(4);
             this.resource2Tool2.Name = "resource2Tool2";
             this.resource2Tool2.Size = new System.Drawing.Size(192, 131);
             this.resource2Tool2.TabIndex = 57;
@@ -809,7 +763,7 @@
             this.resource2Tool1.ForeColor = System.Drawing.Color.White;
             this.resource2Tool1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource2Tool1.Location = new System.Drawing.Point(645, 151);
-            this.resource2Tool1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource2Tool1.Margin = new System.Windows.Forms.Padding(4);
             this.resource2Tool1.Name = "resource2Tool1";
             this.resource2Tool1.Size = new System.Drawing.Size(189, 131);
             this.resource2Tool1.TabIndex = 56;
@@ -827,7 +781,7 @@
             this.resource2PerClickUpgrade.ForeColor = System.Drawing.Color.White;
             this.resource2PerClickUpgrade.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource2PerClickUpgrade.Location = new System.Drawing.Point(451, 151);
-            this.resource2PerClickUpgrade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource2PerClickUpgrade.Margin = new System.Windows.Forms.Padding(4);
             this.resource2PerClickUpgrade.Name = "resource2PerClickUpgrade";
             this.resource2PerClickUpgrade.Size = new System.Drawing.Size(187, 131);
             this.resource2PerClickUpgrade.TabIndex = 55;
@@ -845,7 +799,7 @@
             this.resource1Tool3.ForeColor = System.Drawing.Color.White;
             this.resource1Tool3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource1Tool3.Location = new System.Drawing.Point(1032, 13);
-            this.resource1Tool3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource1Tool3.Margin = new System.Windows.Forms.Padding(4);
             this.resource1Tool3.Name = "resource1Tool3";
             this.resource1Tool3.Size = new System.Drawing.Size(189, 131);
             this.resource1Tool3.TabIndex = 54;
@@ -863,7 +817,7 @@
             this.resource1Tool2.ForeColor = System.Drawing.Color.White;
             this.resource1Tool2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource1Tool2.Location = new System.Drawing.Point(839, 13);
-            this.resource1Tool2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource1Tool2.Margin = new System.Windows.Forms.Padding(4);
             this.resource1Tool2.Name = "resource1Tool2";
             this.resource1Tool2.Size = new System.Drawing.Size(189, 131);
             this.resource1Tool2.TabIndex = 53;
@@ -881,7 +835,7 @@
             this.resource1Tool1.ForeColor = System.Drawing.Color.White;
             this.resource1Tool1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource1Tool1.Location = new System.Drawing.Point(645, 13);
-            this.resource1Tool1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource1Tool1.Margin = new System.Windows.Forms.Padding(4);
             this.resource1Tool1.Name = "resource1Tool1";
             this.resource1Tool1.Size = new System.Drawing.Size(187, 131);
             this.resource1Tool1.TabIndex = 52;
@@ -899,7 +853,7 @@
             this.resource1PerClickUpgrade.ForeColor = System.Drawing.Color.White;
             this.resource1PerClickUpgrade.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource1PerClickUpgrade.Location = new System.Drawing.Point(451, 13);
-            this.resource1PerClickUpgrade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource1PerClickUpgrade.Margin = new System.Windows.Forms.Padding(4);
             this.resource1PerClickUpgrade.Name = "resource1PerClickUpgrade";
             this.resource1PerClickUpgrade.Size = new System.Drawing.Size(187, 131);
             this.resource1PerClickUpgrade.TabIndex = 51;
@@ -916,7 +870,7 @@
             this.resource2ToRocket.ForeColor = System.Drawing.Color.White;
             this.resource2ToRocket.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource2ToRocket.Location = new System.Drawing.Point(235, 683);
-            this.resource2ToRocket.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource2ToRocket.Margin = new System.Windows.Forms.Padding(4);
             this.resource2ToRocket.Name = "resource2ToRocket";
             this.resource2ToRocket.Size = new System.Drawing.Size(187, 131);
             this.resource2ToRocket.TabIndex = 48;
@@ -934,7 +888,7 @@
             this.resource1ToRocket.ForeColor = System.Drawing.Color.White;
             this.resource1ToRocket.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource1ToRocket.Location = new System.Drawing.Point(27, 682);
-            this.resource1ToRocket.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource1ToRocket.Margin = new System.Windows.Forms.Padding(4);
             this.resource1ToRocket.Name = "resource1ToRocket";
             this.resource1ToRocket.Size = new System.Drawing.Size(187, 131);
             this.resource1ToRocket.TabIndex = 47;
@@ -952,7 +906,7 @@
             this.resource4ToRocket.ForeColor = System.Drawing.Color.White;
             this.resource4ToRocket.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource4ToRocket.Location = new System.Drawing.Point(235, 822);
-            this.resource4ToRocket.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource4ToRocket.Margin = new System.Windows.Forms.Padding(4);
             this.resource4ToRocket.Name = "resource4ToRocket";
             this.resource4ToRocket.Size = new System.Drawing.Size(187, 131);
             this.resource4ToRocket.TabIndex = 46;
@@ -970,13 +924,260 @@
             this.resource3ToRocket.ForeColor = System.Drawing.Color.White;
             this.resource3ToRocket.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.resource3ToRocket.Location = new System.Drawing.Point(27, 821);
-            this.resource3ToRocket.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.resource3ToRocket.Margin = new System.Windows.Forms.Padding(4);
             this.resource3ToRocket.Name = "resource3ToRocket";
             this.resource3ToRocket.Size = new System.Drawing.Size(187, 131);
             this.resource3ToRocket.TabIndex = 45;
             this.resource3ToRocket.Text = "tit to rocket";
             this.resource3ToRocket.UseVisualStyleBackColor = true;
             this.resource3ToRocket.Click += new System.EventHandler(this.resource3ToRocket_Click);
+            // 
+            // tool1Upgrades
+            // 
+            this.tool1Upgrades.BackColor = System.Drawing.Color.Transparent;
+            this.tool1Upgrades.Controls.Add(this.resource4Tool1Upgrades);
+            this.tool1Upgrades.Controls.Add(this.resource3Tool1Upgrades);
+            this.tool1Upgrades.Controls.Add(this.resource2Tool1Upgrades);
+            this.tool1Upgrades.Controls.Add(this.resource1Tool1Upgrades);
+            this.tool1Upgrades.Location = new System.Drawing.Point(645, 631);
+            this.tool1Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.tool1Upgrades.Name = "tool1Upgrades";
+            this.tool1Upgrades.Size = new System.Drawing.Size(187, 260);
+            this.tool1Upgrades.TabIndex = 89;
+            this.tool1Upgrades.Visible = false;
+            // 
+            // resource4Tool1Upgrades
+            // 
+            this.resource4Tool1Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource4Tool1Upgrades.BackgroundImage")));
+            this.resource4Tool1Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource4Tool1Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource4Tool1Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource4Tool1Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource4Tool1Upgrades.Location = new System.Drawing.Point(0, 144);
+            this.resource4Tool1Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource4Tool1Upgrades.Name = "resource4Tool1Upgrades";
+            this.resource4Tool1Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource4Tool1Upgrades.TabIndex = 3;
+            this.resource4Tool1Upgrades.Text = "Diamond Miner Upgrade";
+            this.resource4Tool1Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource4Tool1Upgrades.UseVisualStyleBackColor = true;
+            this.resource4Tool1Upgrades.Click += new System.EventHandler(this.resource4Tool1Upgrades_Click);
+            // 
+            // resource3Tool1Upgrades
+            // 
+            this.resource3Tool1Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource3Tool1Upgrades.BackgroundImage")));
+            this.resource3Tool1Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource3Tool1Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource3Tool1Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource3Tool1Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource3Tool1Upgrades.Location = new System.Drawing.Point(0, 96);
+            this.resource3Tool1Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource3Tool1Upgrades.Name = "resource3Tool1Upgrades";
+            this.resource3Tool1Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource3Tool1Upgrades.TabIndex = 2;
+            this.resource3Tool1Upgrades.Text = "Titanium miner upgrade";
+            this.resource3Tool1Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource3Tool1Upgrades.UseVisualStyleBackColor = true;
+            this.resource3Tool1Upgrades.Click += new System.EventHandler(this.resource3Tool1Upgrades_Click);
+            // 
+            // resource2Tool1Upgrades
+            // 
+            this.resource2Tool1Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource2Tool1Upgrades.BackgroundImage")));
+            this.resource2Tool1Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource2Tool1Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource2Tool1Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource2Tool1Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource2Tool1Upgrades.Location = new System.Drawing.Point(0, 48);
+            this.resource2Tool1Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource2Tool1Upgrades.Name = "resource2Tool1Upgrades";
+            this.resource2Tool1Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource2Tool1Upgrades.TabIndex = 1;
+            this.resource2Tool1Upgrades.Text = "Gold miner upgrade";
+            this.resource2Tool1Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource2Tool1Upgrades.UseVisualStyleBackColor = true;
+            this.resource2Tool1Upgrades.Click += new System.EventHandler(this.resource2Tool1Upgrades_Click);
+            // 
+            // resource1Tool1Upgrades
+            // 
+            this.resource1Tool1Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource1Tool1Upgrades.BackgroundImage")));
+            this.resource1Tool1Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource1Tool1Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource1Tool1Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource1Tool1Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource1Tool1Upgrades.Location = new System.Drawing.Point(0, 0);
+            this.resource1Tool1Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource1Tool1Upgrades.Name = "resource1Tool1Upgrades";
+            this.resource1Tool1Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource1Tool1Upgrades.TabIndex = 0;
+            this.resource1Tool1Upgrades.Text = "Iron miner upgrade";
+            this.resource1Tool1Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource1Tool1Upgrades.UseVisualStyleBackColor = true;
+            this.resource1Tool1Upgrades.Click += new System.EventHandler(this.resource1Tool1Upgrades_Click);
+            // 
+            // tool2Upgrades
+            // 
+            this.tool2Upgrades.BackColor = System.Drawing.Color.Transparent;
+            this.tool2Upgrades.Controls.Add(this.resource4Tool2Upgrades);
+            this.tool2Upgrades.Controls.Add(this.resource3Tool2Upgrades);
+            this.tool2Upgrades.Controls.Add(this.resource2Tool2Upgrades);
+            this.tool2Upgrades.Controls.Add(this.resource1Tool2Upgrades);
+            this.tool2Upgrades.Location = new System.Drawing.Point(839, 631);
+            this.tool2Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.tool2Upgrades.Name = "tool2Upgrades";
+            this.tool2Upgrades.Size = new System.Drawing.Size(187, 260);
+            this.tool2Upgrades.TabIndex = 90;
+            this.tool2Upgrades.Visible = false;
+            // 
+            // resource4Tool2Upgrades
+            // 
+            this.resource4Tool2Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource4Tool2Upgrades.BackgroundImage")));
+            this.resource4Tool2Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource4Tool2Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource4Tool2Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource4Tool2Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource4Tool2Upgrades.Location = new System.Drawing.Point(0, 144);
+            this.resource4Tool2Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource4Tool2Upgrades.Name = "resource4Tool2Upgrades";
+            this.resource4Tool2Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource4Tool2Upgrades.TabIndex = 3;
+            this.resource4Tool2Upgrades.Text = "resource4 drill upgrade";
+            this.resource4Tool2Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource4Tool2Upgrades.UseVisualStyleBackColor = true;
+            this.resource4Tool2Upgrades.Click += new System.EventHandler(this.resource4Tool2Upgrades_Click);
+            // 
+            // resource3Tool2Upgrades
+            // 
+            this.resource3Tool2Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource3Tool2Upgrades.BackgroundImage")));
+            this.resource3Tool2Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource3Tool2Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource3Tool2Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource3Tool2Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource3Tool2Upgrades.Location = new System.Drawing.Point(0, 96);
+            this.resource3Tool2Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource3Tool2Upgrades.Name = "resource3Tool2Upgrades";
+            this.resource3Tool2Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource3Tool2Upgrades.TabIndex = 2;
+            this.resource3Tool2Upgrades.Text = "Titanium Drill upgrade";
+            this.resource3Tool2Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource3Tool2Upgrades.UseVisualStyleBackColor = true;
+            this.resource3Tool2Upgrades.Click += new System.EventHandler(this.resource3Tool2Upgrades_Click);
+            // 
+            // resource2Tool2Upgrades
+            // 
+            this.resource2Tool2Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource2Tool2Upgrades.BackgroundImage")));
+            this.resource2Tool2Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource2Tool2Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource2Tool2Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource2Tool2Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource2Tool2Upgrades.Location = new System.Drawing.Point(0, 48);
+            this.resource2Tool2Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource2Tool2Upgrades.Name = "resource2Tool2Upgrades";
+            this.resource2Tool2Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource2Tool2Upgrades.TabIndex = 1;
+            this.resource2Tool2Upgrades.Text = "Gold drill upgrade";
+            this.resource2Tool2Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource2Tool2Upgrades.UseVisualStyleBackColor = true;
+            this.resource2Tool2Upgrades.Click += new System.EventHandler(this.resource2Tool2Upgrades_Click);
+            // 
+            // resource1Tool2Upgrades
+            // 
+            this.resource1Tool2Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource1Tool2Upgrades.BackgroundImage")));
+            this.resource1Tool2Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource1Tool2Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource1Tool2Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource1Tool2Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource1Tool2Upgrades.Location = new System.Drawing.Point(0, 0);
+            this.resource1Tool2Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource1Tool2Upgrades.Name = "resource1Tool2Upgrades";
+            this.resource1Tool2Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource1Tool2Upgrades.TabIndex = 0;
+            this.resource1Tool2Upgrades.Text = "Iron drill upgrade";
+            this.resource1Tool2Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource1Tool2Upgrades.UseVisualStyleBackColor = true;
+            this.resource1Tool2Upgrades.Click += new System.EventHandler(this.resource1Tool2Upgrades_Click);
+            // 
+            // tool3Upgrades
+            // 
+            this.tool3Upgrades.BackColor = System.Drawing.Color.Transparent;
+            this.tool3Upgrades.Controls.Add(this.resource4Tool3Upgrades);
+            this.tool3Upgrades.Controls.Add(this.resource3Tool3Upgrades);
+            this.tool3Upgrades.Controls.Add(this.resource2Tool3Upgrades);
+            this.tool3Upgrades.Controls.Add(this.resource1Tool3Upgrades);
+            this.tool3Upgrades.Location = new System.Drawing.Point(1032, 631);
+            this.tool3Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.tool3Upgrades.Name = "tool3Upgrades";
+            this.tool3Upgrades.Size = new System.Drawing.Size(187, 260);
+            this.tool3Upgrades.TabIndex = 91;
+            this.tool3Upgrades.Visible = false;
+            // 
+            // resource4Tool3Upgrades
+            // 
+            this.resource4Tool3Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource4Tool3Upgrades.BackgroundImage")));
+            this.resource4Tool3Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource4Tool3Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource4Tool3Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource4Tool3Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource4Tool3Upgrades.Location = new System.Drawing.Point(0, 144);
+            this.resource4Tool3Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource4Tool3Upgrades.Name = "resource4Tool3Upgrades";
+            this.resource4Tool3Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource4Tool3Upgrades.TabIndex = 3;
+            this.resource4Tool3Upgrades.Text = "resource4 esc upgrade";
+            this.resource4Tool3Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource4Tool3Upgrades.UseVisualStyleBackColor = true;
+            this.resource4Tool3Upgrades.Click += new System.EventHandler(this.resource4Tool3Upgrades_Click);
+            // 
+            // resource3Tool3Upgrades
+            // 
+            this.resource3Tool3Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource3Tool3Upgrades.BackgroundImage")));
+            this.resource3Tool3Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource3Tool3Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource3Tool3Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource3Tool3Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource3Tool3Upgrades.Location = new System.Drawing.Point(0, 96);
+            this.resource3Tool3Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource3Tool3Upgrades.Name = "resource3Tool3Upgrades";
+            this.resource3Tool3Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource3Tool3Upgrades.TabIndex = 2;
+            this.resource3Tool3Upgrades.Text = "resource3 esc upgrade";
+            this.resource3Tool3Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource3Tool3Upgrades.UseVisualStyleBackColor = true;
+            this.resource3Tool3Upgrades.Click += new System.EventHandler(this.resource3Tool3Upgrades_Click);
+            // 
+            // resource2Tool3Upgrades
+            // 
+            this.resource2Tool3Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource2Tool3Upgrades.BackgroundImage")));
+            this.resource2Tool3Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource2Tool3Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource2Tool3Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource2Tool3Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource2Tool3Upgrades.Location = new System.Drawing.Point(0, 48);
+            this.resource2Tool3Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource2Tool3Upgrades.Name = "resource2Tool3Upgrades";
+            this.resource2Tool3Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource2Tool3Upgrades.TabIndex = 1;
+            this.resource2Tool3Upgrades.Text = "resource2 esc upgrade";
+            this.resource2Tool3Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource2Tool3Upgrades.UseVisualStyleBackColor = true;
+            this.resource2Tool3Upgrades.Click += new System.EventHandler(this.resource2Tool3Upgrades_Click);
+            // 
+            // resource1Tool3Upgrades
+            // 
+            this.resource1Tool3Upgrades.BackColor = System.Drawing.Color.Black;
+            this.resource1Tool3Upgrades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource1Tool3Upgrades.BackgroundImage")));
+            this.resource1Tool3Upgrades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.resource1Tool3Upgrades.Dock = System.Windows.Forms.DockStyle.Top;
+            this.resource1Tool3Upgrades.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resource1Tool3Upgrades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.resource1Tool3Upgrades.Location = new System.Drawing.Point(0, 0);
+            this.resource1Tool3Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this.resource1Tool3Upgrades.Name = "resource1Tool3Upgrades";
+            this.resource1Tool3Upgrades.Size = new System.Drawing.Size(187, 48);
+            this.resource1Tool3Upgrades.TabIndex = 0;
+            this.resource1Tool3Upgrades.Text = "Iron esc upgrade";
+            this.resource1Tool3Upgrades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.resource1Tool3Upgrades.UseVisualStyleBackColor = false;
+            this.resource1Tool3Upgrades.Click += new System.EventHandler(this.resource1Tool3Upgrades_Click);
             // 
             // mainGameScreen
             // 
@@ -985,6 +1186,9 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1234, 996);
+            this.Controls.Add(this.tool3Upgrades);
+            this.Controls.Add(this.tool2Upgrades);
+            this.Controls.Add(this.tool1Upgrades);
             this.Controls.Add(this.autoSaveTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.resource4TextBox);
@@ -993,10 +1197,7 @@
             this.Controls.Add(this.resource1TextBox);
             this.Controls.Add(this.saveGameButton);
             this.Controls.Add(this.loadGameButton);
-            this.Controls.Add(this._tool1Upgrades);
-            this.Controls.Add(this._tool3Upgrades);
             this.Controls.Add(this.showTool3Upgrades);
-            this.Controls.Add(this._tool2Upgrades);
             this.Controls.Add(this.showTool2Upgrades);
             this.Controls.Add(this.showTool1Upgrades);
             this.Controls.Add(this.launchButton);
@@ -1025,19 +1226,16 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Pixel Maz", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1250, 800);
             this.Name = "mainGameScreen";
             this.Text = "Resource Collector";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.mainGameScreen_Load);
             this.Resize += new System.EventHandler(this.mainGameScreen_Resize);
-            this._tool3Upgrades.ResumeLayout(false);
-            this._tool3Upgrades.PerformLayout();
-            this._tool2Upgrades.ResumeLayout(false);
-            this._tool2Upgrades.PerformLayout();
-            this._tool1Upgrades.ResumeLayout(false);
-            this._tool1Upgrades.PerformLayout();
+            this.tool1Upgrades.ResumeLayout(false);
+            this.tool2Upgrades.ResumeLayout(false);
+            this.tool3Upgrades.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1098,6 +1296,21 @@
         private System.Windows.Forms.Label resource4TextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label autoSaveTextBox;
+        private System.Windows.Forms.Panel tool1Upgrades;
+        private System.Windows.Forms.Button resource4Tool1Upgrades;
+        private System.Windows.Forms.Button resource3Tool1Upgrades;
+        private System.Windows.Forms.Button resource2Tool1Upgrades;
+        private System.Windows.Forms.Button resource1Tool1Upgrades;
+        private System.Windows.Forms.Panel tool2Upgrades;
+        private System.Windows.Forms.Button resource4Tool2Upgrades;
+        private System.Windows.Forms.Button resource3Tool2Upgrades;
+        private System.Windows.Forms.Button resource2Tool2Upgrades;
+        private System.Windows.Forms.Button resource1Tool2Upgrades;
+        private System.Windows.Forms.Panel tool3Upgrades;
+        private System.Windows.Forms.Button resource4Tool3Upgrades;
+        private System.Windows.Forms.Button resource3Tool3Upgrades;
+        private System.Windows.Forms.Button resource2Tool3Upgrades;
+        private System.Windows.Forms.Button resource1Tool3Upgrades;
     }
 }
 
