@@ -28,6 +28,10 @@
             _resource1._perClickUpgradeCount = 0;
             _resource1.resource1ToRocket = 0;
             _resource1.resource1Needed = 1000000000;
+            _resource1._perClickUpgradeCost = 100;
+            _resource1._perSecondUpgrade1Cost = 150;
+            _resource1._perSecondUpgrade2Cost = 300;
+            _resource1._perSecondUpgrade3Cost = 600;
             _resource1.increaseResourcePerSecond1 = 15;
             _resource1.increaseResourcePerSecond2 = 30;
             _resource1.increaseResourcePerSecond3 = 45;
@@ -47,6 +51,10 @@
             _resource2._perClickUpgradeCount = 0;
             _resource2.resource2ToRocket = 0;
             _resource2.resource2Needed = 500000000;
+            _resource2._perClickUpgradeCost = 200;
+            _resource2._perSecondUpgrade1Cost = 300;
+            _resource2._perSecondUpgrade2Cost = 600;
+            _resource2._perSecondUpgrade3Cost = 900;
             _resource2.increaseResourcePerSecond1 = 5;
             _resource2.increaseResourcePerSecond2 = 10;
             _resource2.increaseResourcePerSecond3 = 15;
@@ -66,6 +74,10 @@
             _resource3._perClickUpgradeCount = 0;
             _resource3.resource3ToRocket = 0;
             _resource3.resource3Needed = 1000000;
+            _resource3._perClickUpgradeCost = 400;
+            _resource3._perSecondUpgrade1Cost = 600;
+            _resource3._perSecondUpgrade2Cost = 1200;
+            _resource3._perSecondUpgrade3Cost = 1800;
             _resource3.increaseResourcePerSecond1 = 3;
             _resource3.increaseResourcePerSecond2 = 6;
             _resource3.increaseResourcePerSecond3 = 9;
@@ -85,6 +97,10 @@
             _resource4._perClickUpgradeCount = 0;
             _resource4.resource4ToRocket = 0;
             _resource4.resource4Needed = 100000;
+            _resource4._perClickUpgradeCost = 800;
+            _resource4._perSecondUpgrade1Cost = 1200;
+            _resource4._perSecondUpgrade2Cost = 2400;
+            _resource4._perSecondUpgrade3Cost = 3600;
             _resource4.increaseResourcePerSecond1 = 1;
             _resource4.increaseResourcePerSecond2 = 2;
             _resource4.increaseResourcePerSecond3 = 3;
