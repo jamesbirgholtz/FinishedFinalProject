@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace resourceCollecter
@@ -11,11 +7,11 @@ namespace resourceCollecter
     internal class FormControls
     {
         // Fields
-        private Form form; // reference to the form object that contains the controls
+        private readonly Form form; // reference to the form object that contains the controls
         private Rectangle originalFormSize; // stores the original size of the form
-        private Dictionary<Control, Rectangle> originalControlRectangles; // stores the original location and size of each control
-        private Dictionary<Control, Size> originalControlSizes; // stores the original size of each control
-        private mainGameScreen _mainForm; // reference to the main game screen object
+        private readonly Dictionary<Control, Rectangle> originalControlRectangles; // stores the original location and size of each control
+        private readonly Dictionary<Control, Size> originalControlSizes; // stores the original size of each control
+        private readonly mainGameScreen _mainForm; // reference to the main game screen object
 
         // Method to update the original form size
         public void UpdateOriginalFormSize(Size size)
@@ -44,14 +40,14 @@ namespace resourceCollecter
         }
 
 
-    public void ApplyResize(Form form)
+        public void ApplyResize(Form form)
         {
             // Calculate the ratio of the current form size to the original form size
             float xRatio = (float)form.Width / originalFormSize.Width;
             float yRatio = (float)form.Height / originalFormSize.Height;
 
             // Create a new SizeF object to store the scale factors
-            SizeF scaleFactor = new SizeF(xRatio, yRatio);
+            _ = new SizeF(xRatio, yRatio);
 
             // Iterate through each control and its original rectangle stored in the originalControlRectangles dictionary
             foreach (KeyValuePair<Control, Rectangle> entry in originalControlRectangles)

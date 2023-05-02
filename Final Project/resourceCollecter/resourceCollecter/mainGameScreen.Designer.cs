@@ -33,17 +33,17 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.rocketProgressBar = new System.Windows.Forms.ProgressBar();
             this.resourceButton = new System.Windows.Forms.Button();
-            this.tool3Upgrades = new System.Windows.Forms.Panel();
+            this._tool3Upgrades = new System.Windows.Forms.Panel();
             this.resource4Tool3Upgrade = new System.Windows.Forms.Button();
             this.resource3Tool3Upgrade = new System.Windows.Forms.Button();
             this.resource2Tool3Upgrade = new System.Windows.Forms.Button();
             this.resource1Tool3Upgrade = new System.Windows.Forms.Button();
-            this.tool2Upgrades = new System.Windows.Forms.Panel();
+            this._tool2Upgrades = new System.Windows.Forms.Panel();
             this.resource4Tool2Upgrade = new System.Windows.Forms.Button();
             this.resource3Tool2Upgrade = new System.Windows.Forms.Button();
             this.resource2Tool2Upgrade = new System.Windows.Forms.Button();
             this.resource1Tool2Upgrade = new System.Windows.Forms.Button();
-            this.tool1Upgrades = new System.Windows.Forms.Panel();
+            this._tool1Upgrades = new System.Windows.Forms.Panel();
             this.resource4Tool1Upgrade = new System.Windows.Forms.Button();
             this.resource3Tool1Upgrade = new System.Windows.Forms.Button();
             this.resource2Tool1Upgrade = new System.Windows.Forms.Button();
@@ -86,9 +86,9 @@
             this.resource1ToRocket = new System.Windows.Forms.Button();
             this.resource4ToRocket = new System.Windows.Forms.Button();
             this.resource3ToRocket = new System.Windows.Forms.Button();
-            this.tool3Upgrades.SuspendLayout();
-            this.tool2Upgrades.SuspendLayout();
-            this.tool1Upgrades.SuspendLayout();
+            this._tool3Upgrades.SuspendLayout();
+            this._tool2Upgrades.SuspendLayout();
+            this._tool1Upgrades.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -134,19 +134,19 @@
             // 
             // tool3Upgrades
             // 
-            this.tool3Upgrades.AutoScroll = true;
-            this.tool3Upgrades.AutoSize = true;
-            this.tool3Upgrades.BackColor = System.Drawing.Color.Transparent;
-            this.tool3Upgrades.Controls.Add(this.resource4Tool3Upgrade);
-            this.tool3Upgrades.Controls.Add(this.resource3Tool3Upgrade);
-            this.tool3Upgrades.Controls.Add(this.resource2Tool3Upgrade);
-            this.tool3Upgrades.Controls.Add(this.resource1Tool3Upgrade);
-            this.tool3Upgrades.Location = new System.Drawing.Point(1032, 631);
-            this.tool3Upgrades.Margin = new System.Windows.Forms.Padding(0);
-            this.tool3Upgrades.Name = "tool3Upgrades";
-            this.tool3Upgrades.Size = new System.Drawing.Size(187, 248);
-            this.tool3Upgrades.TabIndex = 80;
-            this.tool3Upgrades.Visible = false;
+            this._tool3Upgrades.AutoScroll = true;
+            this._tool3Upgrades.AutoSize = true;
+            this._tool3Upgrades.BackColor = System.Drawing.Color.Transparent;
+            this._tool3Upgrades.Controls.Add(this.resource4Tool3Upgrade);
+            this._tool3Upgrades.Controls.Add(this.resource3Tool3Upgrade);
+            this._tool3Upgrades.Controls.Add(this.resource2Tool3Upgrade);
+            this._tool3Upgrades.Controls.Add(this.resource1Tool3Upgrade);
+            this._tool3Upgrades.Location = new System.Drawing.Point(1032, 631);
+            this._tool3Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this._tool3Upgrades.Name = "tool3Upgrades";
+            this._tool3Upgrades.Size = new System.Drawing.Size(187, 248);
+            this._tool3Upgrades.TabIndex = 80;
+            this._tool3Upgrades.Visible = false;
             // 
             // resource4Tool3Upgrade
             // 
@@ -230,18 +230,18 @@
             // 
             // tool2Upgrades
             // 
-            this.tool2Upgrades.AutoSize = true;
-            this.tool2Upgrades.BackColor = System.Drawing.Color.Transparent;
-            this.tool2Upgrades.Controls.Add(this.resource4Tool2Upgrade);
-            this.tool2Upgrades.Controls.Add(this.resource3Tool2Upgrade);
-            this.tool2Upgrades.Controls.Add(this.resource2Tool2Upgrade);
-            this.tool2Upgrades.Controls.Add(this.resource1Tool2Upgrade);
-            this.tool2Upgrades.Location = new System.Drawing.Point(839, 631);
-            this.tool2Upgrades.Margin = new System.Windows.Forms.Padding(0);
-            this.tool2Upgrades.Name = "tool2Upgrades";
-            this.tool2Upgrades.Size = new System.Drawing.Size(187, 248);
-            this.tool2Upgrades.TabIndex = 78;
-            this.tool2Upgrades.Visible = false;
+            this._tool2Upgrades.AutoSize = true;
+            this._tool2Upgrades.BackColor = System.Drawing.Color.Transparent;
+            this._tool2Upgrades.Controls.Add(this.resource4Tool2Upgrade);
+            this._tool2Upgrades.Controls.Add(this.resource3Tool2Upgrade);
+            this._tool2Upgrades.Controls.Add(this.resource2Tool2Upgrade);
+            this._tool2Upgrades.Controls.Add(this.resource1Tool2Upgrade);
+            this._tool2Upgrades.Location = new System.Drawing.Point(839, 631);
+            this._tool2Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this._tool2Upgrades.Name = "tool2Upgrades";
+            this._tool2Upgrades.Size = new System.Drawing.Size(187, 248);
+            this._tool2Upgrades.TabIndex = 78;
+            this._tool2Upgrades.Visible = false;
             // 
             // resource4Tool2Upgrade
             // 
@@ -325,18 +325,18 @@
             // 
             // tool1Upgrades
             // 
-            this.tool1Upgrades.AutoSize = true;
-            this.tool1Upgrades.BackColor = System.Drawing.Color.Transparent;
-            this.tool1Upgrades.Controls.Add(this.resource4Tool1Upgrade);
-            this.tool1Upgrades.Controls.Add(this.resource3Tool1Upgrade);
-            this.tool1Upgrades.Controls.Add(this.resource2Tool1Upgrade);
-            this.tool1Upgrades.Controls.Add(this.resource1Tool1Upgrade);
-            this.tool1Upgrades.Location = new System.Drawing.Point(645, 631);
-            this.tool1Upgrades.Margin = new System.Windows.Forms.Padding(0);
-            this.tool1Upgrades.Name = "tool1Upgrades";
-            this.tool1Upgrades.Size = new System.Drawing.Size(187, 248);
-            this.tool1Upgrades.TabIndex = 81;
-            this.tool1Upgrades.Visible = false;
+            this._tool1Upgrades.AutoSize = true;
+            this._tool1Upgrades.BackColor = System.Drawing.Color.Transparent;
+            this._tool1Upgrades.Controls.Add(this.resource4Tool1Upgrade);
+            this._tool1Upgrades.Controls.Add(this.resource3Tool1Upgrade);
+            this._tool1Upgrades.Controls.Add(this.resource2Tool1Upgrade);
+            this._tool1Upgrades.Controls.Add(this.resource1Tool1Upgrade);
+            this._tool1Upgrades.Location = new System.Drawing.Point(645, 631);
+            this._tool1Upgrades.Margin = new System.Windows.Forms.Padding(0);
+            this._tool1Upgrades.Name = "tool1Upgrades";
+            this._tool1Upgrades.Size = new System.Drawing.Size(187, 248);
+            this._tool1Upgrades.TabIndex = 81;
+            this._tool1Upgrades.Visible = false;
             // 
             // resource4Tool1Upgrade
             // 
@@ -993,10 +993,10 @@
             this.Controls.Add(this.resource1TextBox);
             this.Controls.Add(this.saveGameButton);
             this.Controls.Add(this.loadGameButton);
-            this.Controls.Add(this.tool1Upgrades);
-            this.Controls.Add(this.tool3Upgrades);
+            this.Controls.Add(this._tool1Upgrades);
+            this.Controls.Add(this._tool3Upgrades);
             this.Controls.Add(this.showTool3Upgrades);
-            this.Controls.Add(this.tool2Upgrades);
+            this.Controls.Add(this._tool2Upgrades);
             this.Controls.Add(this.showTool2Upgrades);
             this.Controls.Add(this.showTool1Upgrades);
             this.Controls.Add(this.launchButton);
@@ -1032,12 +1032,12 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.mainGameScreen_Load);
             this.Resize += new System.EventHandler(this.mainGameScreen_Resize);
-            this.tool3Upgrades.ResumeLayout(false);
-            this.tool3Upgrades.PerformLayout();
-            this.tool2Upgrades.ResumeLayout(false);
-            this.tool2Upgrades.PerformLayout();
-            this.tool1Upgrades.ResumeLayout(false);
-            this.tool1Upgrades.PerformLayout();
+            this._tool3Upgrades.ResumeLayout(false);
+            this._tool3Upgrades.PerformLayout();
+            this._tool2Upgrades.ResumeLayout(false);
+            this._tool2Upgrades.PerformLayout();
+            this._tool1Upgrades.ResumeLayout(false);
+            this._tool1Upgrades.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1070,20 +1070,17 @@
         private System.Windows.Forms.Button resource4ToRocket;
         private System.Windows.Forms.Button resource3ToRocket;
         private System.Windows.Forms.Button resourceButton;
-        private System.Windows.Forms.Panel tool3Upgrades;
         private System.Windows.Forms.Button resource4Tool3Upgrade;
         private System.Windows.Forms.Button resource3Tool3Upgrade;
         private System.Windows.Forms.Button resource2Tool3Upgrade;
         private System.Windows.Forms.Button resource1Tool3Upgrade;
         private System.Windows.Forms.Button showTool3Upgrades;
-        private System.Windows.Forms.Panel tool2Upgrades;
         private System.Windows.Forms.Button resource4Tool2Upgrade;
         private System.Windows.Forms.Button resource3Tool2Upgrade;
         private System.Windows.Forms.Button resource2Tool2Upgrade;
         private System.Windows.Forms.Button resource1Tool2Upgrade;
         private System.Windows.Forms.Button showTool2Upgrades;
         private System.Windows.Forms.Button showTool1Upgrades;
-        private System.Windows.Forms.Panel tool1Upgrades;
         private System.Windows.Forms.Button resource4Tool1Upgrade;
         private System.Windows.Forms.Button resource3Tool1Upgrade;
         private System.Windows.Forms.Button resource2Tool1Upgrade;

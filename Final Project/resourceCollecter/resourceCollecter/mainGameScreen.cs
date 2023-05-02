@@ -1,31 +1,28 @@
 ﻿using System;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Windows.Forms;
 using System.Drawing;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.IO;
 using System.Reflection;
+using System.Windows.Forms;
 
 namespace resourceCollecter
 {
     public partial class mainGameScreen : Form
     {
-        private TextUpdater _textUpdater;
+        private readonly TextUpdater _textUpdater;
         private Resource1 resource1;
         private Resource2 resource2;
         private Resource3 resource3;
         private Resource4 resource4;
         private FormControls _formControls;
-        private BaseResource baseResource;
-        private NewWorld _newWorld;
-        private SaveManager saveManager;
+        private readonly BaseResource baseResource;
+        private readonly NewWorld _newWorld;
+        private readonly SaveManager saveManager;
         private bool saveFilePathCreated = false;
         private string saveFilePath;
-        private static Image backgroundImage;
-
-        public Panel _tool1Upgrades => tool1Upgrades;
-        public Panel _tool2Upgrades => tool2Upgrades;
-        public Panel _tool3Upgrades => tool3Upgrades;
+        private static readonly Image backgroundImage;
+        public Panel _tool1Upgrades { get; private set; }
+        public Panel _tool2Upgrades { get; private set; }
+        public Panel _tool3Upgrades { get; private set; }
 
 
 
@@ -53,9 +50,9 @@ namespace resourceCollecter
                 if (stream != null)
                 {
                     Image backgroundImage = Image.FromStream(stream);
-                    this.BackgroundImage = backgroundImage;
-                    this.BackgroundImageLayout = ImageLayout.Stretch;
-                    this.DoubleBuffered = true;
+                    BackgroundImage = backgroundImage;
+                    BackgroundImageLayout = ImageLayout.Stretch;
+                    DoubleBuffered = true;
                 }
                 else
                 {
@@ -145,17 +142,17 @@ namespace resourceCollecter
         // buttons to show the upgrades for the different panels
         private void showTool1Upgrades_Click(object sender, EventArgs e)
         {
-            _formControls.showSubMenu(tool1Upgrades);
+            _formControls.showSubMenu(_tool1Upgrades);
         }
 
         private void showTool2Upgrades_Click(object sender, EventArgs e)
         {
-            _formControls.showSubMenu(tool2Upgrades);
+            _formControls.showSubMenu(_tool2Upgrades);
         }
 
         private void showTool3Upgrades_Click(object sender, EventArgs e)
         {
-            _formControls.showSubMenu(tool3Upgrades);
+            _formControls.showSubMenu(_tool3Upgrades);
         }
 
         private void resourceButton_Click(object sender, EventArgs e)
@@ -424,7 +421,8 @@ namespace resourceCollecter
             resource3ToRocket.Enabled = true;
             resource4ToRocket.Enabled = true;
 
-            if (TextUpdater.currentWorld == 4) {
+            if (TextUpdater.currentWorld == 4)
+            {
                 TextUpdater.currentWorld = 1;
             }
 
@@ -442,7 +440,7 @@ namespace resourceCollecter
                     saveFileDialog.DefaultExt = "json";
                     saveFileDialog.AddExtension = true;
 
-                   
+
                     if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
                         var gameStateToSave = new GameState
@@ -459,15 +457,16 @@ namespace resourceCollecter
                         // set the save file path to the file name
                         saveFilePath = saveFileDialog.FileName;
                         // message showing where the game was saved
-                        MessageBox.Show($"Game state saved to: {saveFileDialog.FileName}");
+                        _ = MessageBox.Show($"Game state saved to: {saveFileDialog.FileName}");
                     }
                 }
                 saveFilePathCreated = true;
             }
             // if there is already a save file path, just save the game state but do not display the messagebox
-            if (saveFilePathCreated) {
+            if (saveFilePathCreated)
+            {
                 try
-                {   
+                {
                     //save gamestate variables
                     var gameStateToSave = new GameState
                     {

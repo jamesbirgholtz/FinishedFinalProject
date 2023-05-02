@@ -17,14 +17,6 @@ C:\Users\birgh\Desktop\Final Project\resourceCollecter\resourceCollecter\bin\Deb
 C:\Users\birgh\Desktop\Final Project\resourceCollecter\resourceCollecter\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\birgh\Desktop\Final Project\resourceCollecter\resourceCollecter\bin\Debug\System.Geometry.xml
 C:\Users\birgh\Desktop\Final Project\resourceCollecter\resourceCollecter\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.csproj.AssemblyReference.cache
-C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.csproj.SuggestedBindingRedirects.cache
-C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.mainGameScreen.resources
-C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.Properties.Resources.resources
-C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.csproj.GenerateResource.cache
-C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.csproj.CoreCompileInputs.cache
-C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.exe
-C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.pdb
 C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\bin\Debug\resourceCollecter.exe.config
 C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\bin\Debug\resourceCollecter.exe
 C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\bin\Debug\resourceCollecter.pdb
@@ -35,4 +27,12 @@ C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\reso
 C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\bin\Debug\Newtonsoft.Json.xml
 C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\bin\Debug\System.Geometry.xml
 C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.csproj.AssemblyReference.cache
+C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.csproj.SuggestedBindingRedirects.cache
+C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.mainGameScreen.resources
+C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.Properties.Resources.resources
+C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.csproj.GenerateResource.cache
+C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.csproj.CoreCompileInputs.cache
 C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.csproj.CopyComplete
+C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.exe
+C:\Users\birgh\Desktop\FinishedFinalProject\Final Project\resourceCollecter\resourceCollecter\obj\Debug\resourceCollecter.pdb

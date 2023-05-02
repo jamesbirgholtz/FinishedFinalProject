@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace resourceCollecter
+﻿namespace resourceCollecter
 {
     // for comments check reasource 1
     public class Resource2 : BaseResource
