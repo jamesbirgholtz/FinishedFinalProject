@@ -423,6 +423,11 @@ namespace resourceCollecter
             resource2ToRocket.Enabled = true;
             resource3ToRocket.Enabled = true;
             resource4ToRocket.Enabled = true;
+
+            if (TextUpdater.currentWorld == 4) {
+                TextUpdater.currentWorld = 1;
+            }
+
         }
 
         private void saveGameButton_Click(object sender, EventArgs e)
